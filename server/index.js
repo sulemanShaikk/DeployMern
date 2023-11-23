@@ -6,9 +6,15 @@ const bcrypt = require("bcrypt");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+  {
+    origin:"*",
+    methods:["POST","GET"],
+    credentials: true
+  }
+));
 
-mongoose.connect("mongodb://127.0.0.1:27017/server-yt");
+mongoose.connect("mongodb+srv://shaiksuleman:1234@cluster0.p63gkmr.mongodb.net/?retryWrites=true&w=majority"");
 
 app.get("/", (req, res) => {
   res.send("Welcome to the server!");

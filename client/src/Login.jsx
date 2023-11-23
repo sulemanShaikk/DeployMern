@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post('http://localhost:3005/login', { name, email, password })
+    axios.post('https://deploy-mern-zobf.vercel.app/login', { name, email, password })
       .then(result => {
         console.log(result);
 

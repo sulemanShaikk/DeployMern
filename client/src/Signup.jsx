@@ -11,7 +11,7 @@ const Signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:3005/register', { name, email, password })
+        axios.post('https://deploy-mern-zobf.vercel.app/register', { name, email, password })
         .then(result => {console.log(result)
         navigate('/login')
         })

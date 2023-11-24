@@ -6,15 +6,8 @@ const bcrypt = require("bcrypt");
 
 const app = express();
 app.use(express.json());
-app.use(cors(
-  {
-    origin:[https://deploymernfront.vercel.app/],
-    methods:["POST","GET"],
-    credentials: true
-  }
-));
-
-mongoose.connect("mongodb+srv://shaiksuleman:1234@cluster0.p63gkmr.mongodb.net/?retryWrites=true&w=majority"");
+app.use(cors());
+mongoose.connect("mongodb://127.0.0.1:27017/server-yt");
 
 app.get("/", (req, res) => {
   res.send("Welcome to the server!");

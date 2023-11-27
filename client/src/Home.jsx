@@ -1,39 +1,45 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import './Home.css'; // Create a CSS file for styling
+import v1 from './videos/vid1.mp4'
+import v2 from './videos/vid2.mp4'
+import v3 from './videos/vid3.mp4'
 
 const Home = () => {
-
-
-    const username = localStorage.getItem('name');
-
-    const navigate = useNavigate();
-
-  const handleLogout = () => {
-    // Perform any logout logic (e.g., clear user session, etc.)
-
-    // Redirect to the login page
-    navigate('/login');
-  };
-
+  const username = localStorage.getItem('name');
+  const navigate = useNavigate();
 
   return (
     <div>
-        <div className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container">
-        <a className="navbar-brand" href="/">Shaik's webPage</a>
+      <div className='video-container'>
+        <div className='video-wrapper'>
+        {/* Video 1 */}
+        <video autoPlay loop muted className='fullscreen-video'>
+          <source src={v1} type='video/mp4' />
+          </video>
+        </div>
 
-        <button className="btn btn-secondary ml-auto" onClick={handleLogout}>
-          Log out
-        </button>
+        <div className='video-wrapper'>
+        {/* Video 2 */}
+        <video autoPlay loop muted className='fullscreen-video'>
+          <source src={v2} type='video/mp4' />
+          </video>
+          </div>
+
+
+        <div className='video-wrapper'>
+        {/* Video 3 */}
+        <video autoPlay loop muted className='fullscreen-video'>
+          <source src={v3} type='video/mp4' />
+         </video>
+         </div>
+
+        <div className='overlay'>
+          <p>{username}, Congratulations Abh 21 days me aapka paisa double</p>
+        </div>
       </div>
     </div>
-    <div className='d-flex justify-content-center align-items-center bg-secondary vh-100'>
-        <p>Welcome {username} </p>
-        
-    </div>
-    </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

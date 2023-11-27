@@ -1,0 +1,26 @@
+   .about-container {
+    max-width: 500px;
+    margin: 100px auto; /* Adjust the top margin to make space for the content */
+    padding: 20px;
+    text-align: center;
+    color: #000;
+    background-color: #fff; /* Add a background color for better visibility */
+    border-radius: 10px; /* Add some border-radius for a rounded look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  } 
+  
+  .activity {
+    margin-top: 30px;
+  }
+  
+  .activity img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .activity p {
+    color: #000;
+  }s
+  
+  

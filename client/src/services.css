@@ -1,0 +1,73 @@
+/* Services.css */
+.services-container {
+    max-width: 800px;
+    margin: 70px auto; /* Center the container horizontally */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .service-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .service-item img {
+    margin-right: 15px; /* Adjust spacing between image and content */
+    border-radius: 5%; /* Make the image circular */
+    width: 50%;
+    height: 40%;
+  }
+  
+  .service-content {
+    flex-grow: 1; /* Allow content to grow and take remaining space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text within content */
+  }
+  
+  .service-content h2 {
+    color: #333;
+  }
+  
+  .service-content p {
+    color: #666;
+    margin: 10px 10px 10px 10px; /* Add margin for better spacing */
+  }
+
+body {
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    font-family: 'Your Preferred Font', sans-serif; /* Add your preferred font */
+    background-image: url('C:/Users/Dell/Desktop/login-register/client/src/Backgroundimage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff; /* Set text color to make it readable on the background */
+  }
+  
+  .services-container {
+    padding: 20px; /* Adjust padding as needed */
+  }
+  
+  .service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .service-content {
+    margin-left: 20px;
+  }
+  
+  /* Add other styles as needed */
+
+  .services-container h1 {
+    color: #333;
+  }
+  
+  

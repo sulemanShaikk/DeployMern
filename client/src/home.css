@@ -60,4 +60,29 @@
     font-size: larger;
     text-overflow: ellipsis;
   } 
+
+  .table-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   
+  .table-center input,
+  .table-center button,
+  .table-center p {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+  margin: 10px; /* Add some margin for spacing */
+  color: rgb(103, 84, 84);
+}
+
+.button {
+  color: black;
+}
+
+.result {
+  color: brown;
+}
+

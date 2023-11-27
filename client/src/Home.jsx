@@ -65,7 +65,7 @@ const Home = () => {
           <button onClick={handleAmountSubmit}>invest</button>
 
           {/* Display the result */}
-          {result !== null && <p>if you invest {amount} you'll get <div className='result'>{result}</div></p>}
+          {result !== null && <p>if you invest {amount} you'll get <div className='result'>"{result}"Rupees</div> from Our side in 21 days.</p>}
           </div>
         </div>
       </div>

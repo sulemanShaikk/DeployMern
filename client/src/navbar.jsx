@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div className="container d-flex justify-content-between align-items-center">
                 <a className="navbar-brand" href="/home">
-                    XYZ company
+                   <b>HOME</b>
                 </a>
 
                 <div className="d-flex justify-content-center">

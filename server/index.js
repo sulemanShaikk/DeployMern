@@ -3,11 +3,19 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const EmployeeModel = require("./models/Employee");
 const bcrypt = require("bcrypt");
+const db = mongoose.connection;
+
+db.on("error", console.error.bind(console, "MongoDB connection error:"));
+
+db.once("open", () => {
+  console.log("Connected to MongoDB Atlas");
+});
 
 const app = express();
 app.use(express.json());
 app.use(cors());
-mongoose.connect("mongodb://127.0.0.1:27017/server-yt");
+//mongoose.connect("mongodb://127.0.0.1:27017/server-yt");
+mongoose.connect("mongodb+srv://shaiksulemansagar:1234@cluster0.o0qhf9t.mongodb.net/?retryWrites=true&w=majority");
 
 app.get("/", (req, res) => {
   res.send("Welcome to the server!");

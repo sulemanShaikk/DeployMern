@@ -53,6 +53,7 @@ const Home = () => {
         <div className='overlay'>
           <p>{username}, Congratulations Abh 21 days me aapka paisa double</p>
           <div className='table-center'>
+            <h2>Enter Your Budget</h2>
           {/* Input for entering the amount */}
           <input
             type='number'

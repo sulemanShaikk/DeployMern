@@ -21,6 +21,10 @@ app.get("/", (req, res) => {
   res.send("Welcome to the server!");
 });
 
+app.use("/", (req, res) => {
+  res.json("Welcome to the server!");
+});
+
 
 app.post("/login", (req, res) => {
   const { name, email, password } = req.body;
@@ -50,6 +54,8 @@ app.post("/register", (req, res) => {
 });
 
 
-app.listen(3005, () => {
-  console.log("Server is running on http://localhost:3005");
+app.listen(3006, () => {
+  console.log("Server is running on http://localhost:3006");
 });
+
+
